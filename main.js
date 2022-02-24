@@ -6,7 +6,6 @@ const two = document.getElementById("two");
 const three = document.getElementById("three");
 const btns = document.getElementsByClassName("slidebtn");
 let i = 0;
-let a = 1;
 
 arrowleft.addEventListener("click", goleft);
 arrowright.addEventListener("click", goright);
