@@ -35,7 +35,8 @@ h1 {
   height: 55%;
   justify-content: space-around;
   margin-top: 15%;
-  gap: 50%;
+  gap: 55%;
+  cursor: pointer;
 }
 #one {
   visibility: visible;
