@@ -15,62 +15,51 @@ body {
   );
 }
 h1 {
+  display: flex;
   padding: 25px;
 }
 #frame {
   background-color: turquoise;
-  width: 1000px;
-  height: 600px;
+  width: 55%;
+  height: auto;
   display: flex;
   justify-content: center;
-
-  align-items: flex-end;
 }
 .pics {
   position: absolute;
 }
-#wrapper {
-  width: 1000px;
-  height: 600px;
+#arrows {
   display: flex;
-  justify-content: space-between;
-}
-#left {
   opacity: 50%;
-  align-self: center;
-}
-#right {
-  opacity: 50%;
-
-  align-self: center;
-}
-#arrowleft {
-}
-#arrowright {
-}
-img > #one > #two {
+  width: 55%;
+  height: 55%;
+  justify-content: space-around;
+  margin-top: 15%;
+  gap: 50%;
 }
 #one {
   visibility: visible;
-  width: 1000px;
-  height: 600px;
+  width: 55%;
+  height: auto;
 }
 #two,
 #three {
   visibility: hidden;
-  width: 1000px;
-  height: 600px;
+  width: 55%;
+  height: auto;
 }
 .btnwrapper {
   display: flex;
-  margin-top: auto;
   justify-content: center;
   gap: 30px;
   padding: 10px;
   font-size: 25px;
+  margin-top: 20%;
 }
 .slidebtn {
   cursor: pointer;
 }
-.test {
+.responsive {
+  width: 100%;
+  height: auto;
 }
