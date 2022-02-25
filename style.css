@@ -27,8 +27,8 @@ h1 {
 }
 .pics {
   position: absolute;
-  opacity: 50%;
-  transition: opacity 300ms ease-in-out;
+
+  transition: opacity 1s ease-in-out;
 }
 
 #arrows {
