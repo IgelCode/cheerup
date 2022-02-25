@@ -27,7 +27,10 @@ h1 {
 }
 .pics {
   position: absolute;
+  opacity: 50%;
+  transition: opacity 300ms ease-in-out;
 }
+
 #arrows {
   display: flex;
   opacity: 50%;
@@ -38,14 +41,17 @@ h1 {
   gap: 55%;
   cursor: pointer;
 }
+#slidebtn:active .pics {
+  transition: opacity 3s ease-in-out;
+}
 #one {
-  visibility: visible;
+  opacity: 100%;
   width: 55%;
   height: auto;
 }
 #two,
 #three {
-  visibility: hidden;
+  opacity: 0%;
   width: 55%;
   height: auto;
 }

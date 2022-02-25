@@ -18,14 +18,14 @@ function myLoop() {
   btns[i].style.color = "gold";
   setTimeout(function () {
     if (i < pics.length - 1) {
-      pics[i].style.visibility = "hidden";
-      pics[i + 1].style.visibility = "visible";
+      pics[i].style.opacity = "0%";
+      pics[i + 1].style.opacity = "100%";
       i++;
       btns[i - 1].style.color = "black";
     } else if (i == pics.length - 1) {
-      pics[i].style.visibility = "hidden";
+      pics[i].style.opacity = "0%";
       i = 0;
-      pics[i].style.visibility = "visible";
+      pics[i].style.opacity = "100%";
       btns[pics.length - 1].style.color = "black";
     }
 
@@ -37,26 +37,26 @@ function myLoop() {
 myLoop();
 
 function goleft() {
-  pics[i].style.visibility = "hidden";
+  pics[i].style.opacity = "0%";
 
   if (i > 0) {
-    pics[i - 1].style.visibility = "visible";
+    pics[i - 1].style.opacity = "100%";
     i--;
   } else if (i == 0) {
     i = 2;
-    pics[i].style.visibility = "visible";
+    pics[i].style.opacity = "100%";
   }
 }
 function goright() {
-  pics[i].style.visibility = "hidden";
+  pics[i].style.opacity = "0%";
 
   if (i < pics.length - 1) {
-    pics[i + 1].style.visibility = "visible";
+    pics[i + 1].style.opacity = "100%";
 
     i++;
   } else if (i == pics.length - 1) {
     i = 0;
-    pics[i].style.visibility = "visible";
+    pics[i].style.opacity = "100%";
   }
 }
 
@@ -65,8 +65,8 @@ function btnstyle() {
   btntwo.style.color = "black";
   btnthree.style.color = "black";
   this.style.color = "gold";
-  pics[i].style.visibility = "hidden";
+  pics[i].style.opacity = "0%";
   i = Number(this.dataset.id);
   console.log(this.dataset.id);
-  pics[i].style.visibility = "visible";
+  pics[i].style.opacity = "100%";
 }
